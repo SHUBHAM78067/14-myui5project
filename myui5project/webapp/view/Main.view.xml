@@ -1,0 +1,23 @@
+<minion:View xmlns:core="sap.ui.core" xmlns:minion="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+             controllerName="mickey.controller.Main">
+    <!-- <Input id="idInp" value="Superman" width="30%"></Input> -->
+    
+    <f:SimpleForm title="My Employee Data" editable="true">
+        <!-- <f:title>
+            <core:Title></core:Title>
+        </f:title> -->
+        <f:content>
+            <Label text="Emp Id"></Label>
+            <Input id="idEmpId" width="40%" value="{/empStr/empId}"></Input>
+            <Label text="Emp name"></Label>
+            <Input id="idEmpName" width="60%" value="{path : '/empStr/empName'}"></Input>
+            <Label text="Salary"></Label>
+            <Input id="idSal" width="30%"></Input>
+            <Label text="Currency"></Label>
+            <Input id="idCurr" width="20%"></Input>
+            <Label text="Smoker"></Label>
+            <CheckBox id="idSmk" width="40%"></CheckBox>
+        </f:content>
+    </f:SimpleForm>
+    <Button text="This is New Button" press="anotherFx"></Button>
+</minion:View>
